@@ -67,7 +67,9 @@ body, #root {
     width: 100%;
 }
 .menu-container{
-    width: 80%;
+    width: 95%;
+    height: 85vh;
+    overflow-y: scroll;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -148,18 +150,20 @@ body, #root {
     transition: 0.5s all step-end;
 }
 
-#item-card img {
+.item-card img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin: auto;
     display: block;
     margin-bottom: 15px;
-    transition: 0.5s all ease-in-out;
 }
 
-#item-card:hover img {
-    transform: scale(1.2);
+.item-card {
+    transition: 0.5s all ease-in-out;
+}
+.item-card:hover {
+    transform: scale(1.1);
 }
 
 .card-top {
@@ -182,7 +186,7 @@ body, #root {
     cursor: pointer;
 }
 
-#item-card img {
+.item-card img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -191,13 +195,13 @@ body, #root {
     margin-bottom: 15px;
     transition: 0.5s all ease-in-out;
 }
-#item-name {
+.item-name {
     margin: 6px 0;
     font-weight: 600;
     color: #eeeee6;
     font-size: 16px;
 }
-#item-price {
+.item-price {
     margin: 0;
     color: #aba9a8;
     font-weight: 500;
@@ -208,6 +212,9 @@ body, #root {
     padding-right: 30px;
     overflow-y: scroll;
     width: 20%;
+}
+#category-list{
+    overflow-x: visible;
 }
 
 .taste-header {
@@ -240,14 +247,11 @@ body, #root {
     margin-top: 15px;
     border-radius: 25px;
     cursor: pointer;
+    z-index: 100;
     transition: 0.3s all ease-in-out;
 }
 .list-card:hover {
     background: #a0886f;
-}
-.list-card:hover img {
-    transition: 0.5s all ease-in-out;
-    transform: scale(1.2);
 }
 .list-card img {
     width: 50px;
