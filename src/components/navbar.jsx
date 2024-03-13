@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+import LOGO from "../assets/Images/mangan-removebg-preview.png"
 const NavBar = () => {
     return (
-        <div id='menu'>
+        <div className='navbar-container'>
             <div className='brand-logo'>
-                <img src='Images/mangan-removebg-preview.png' alt='logo' />
+                <img src={LOGO} alt='logo' />
             </div>
             <div className='menu-item'>
-                <a href='#'>Home</a>
-                <a href='#'>Notification</a>
-                <a href='#'>Your Orders</a>
-                <a href='#'>Help</a>
+                <Link to='/'>Home</Link>
+                <Link to='/cart'>Cart</Link>
+                <Link to='/your+orders'>Your Orders</Link>
+                <Link to='/account'>Account</Link>
             </div>
         </div>
     );

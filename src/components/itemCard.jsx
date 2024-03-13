@@ -1,7 +1,7 @@
 const ItemCard = () => {
     return (
-        <div id='item-card'>
-            <div id='card-top'>
+        <div className='item-card'>
+            <div className='card-top'>
                 <i className='fa fa-star' id='rating'>
                     4.5
                 </i>
