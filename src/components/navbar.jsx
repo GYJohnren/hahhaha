@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import LOGO from "../assets/Images/mangan-removebg-preview.png"
+import { Link } from 'react-router-dom';
+import LOGO from '../assets/Images/mangan-removebg-preview.png';
+import { cookies } from '../services/auth';
 const NavBar = () => {
     return (
         <div className='navbar-container'>
@@ -10,7 +11,13 @@ const NavBar = () => {
                 <Link to='/'>Home</Link>
                 <Link to='/cart'>Cart</Link>
                 <Link to='/your+orders'>Your Orders</Link>
-                <Link to='/account'>Account</Link>
+                {true && (
+                    <>
+                        <Link to='/add+food'>Add foods</Link>
+                        <Link to='/orders'>Orders</Link>
+                    </>
+                )}
+                <Link to='/account'>Log out</Link>
             </div>
         </div>
     );

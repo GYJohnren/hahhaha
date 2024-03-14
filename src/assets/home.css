@@ -6,7 +6,8 @@
 html {
     height: 100%;
 }
-body, #root {
+body,
+#root {
     height: 100%;
     width: 100vw;
 }
@@ -59,14 +60,15 @@ body, #root {
     padding-top: 40px;
     padding-bottom: 10px;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 1;
 }
-.home-container{
+.home-container {
     display: flex;
     width: 100%;
 }
-.menu-container{
+.menu-container {
     width: 95%;
     height: 85vh;
     overflow-y: scroll;
@@ -213,7 +215,7 @@ body, #root {
     overflow-y: scroll;
     width: 20%;
 }
-#category-list{
+#category-list {
     overflow-x: visible;
 }
 
@@ -265,7 +267,6 @@ body, #root {
     text-transform: capitalize;
     color: whitesmoke;
 }
-
 
 .cart-toggle {
     display: none;
